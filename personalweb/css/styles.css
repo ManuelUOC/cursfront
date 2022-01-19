@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap");
+
+* {
+    -webkit-user-select: none; /* Safari */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version */
+}
+
+html, body {
+    min-width: 650px;
+    background-color: lightblue;
+    min-height: 100%; 
+}
+
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+    font-weight: bold;
+    text-decoration: underline;
+}
