@@ -49,16 +49,3 @@ main {
     display: flex;
     gap: 1em;
 }
-
-article {
-    background-color: floralwhite;
-    border: 2px solid lightblue;
-    border-radius: 18px;
-    padding: 1em;
-    box-shadow: 10px 10px aliceblue;
-}
-
-article h3 {
-    color: darkblue;
-    margin-left: 1em;
-}
