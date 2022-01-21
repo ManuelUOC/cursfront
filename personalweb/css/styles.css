@@ -8,7 +8,7 @@
 }
 
 html, body {
-    min-width: 650px;
+    /* min-width: 650px; */
     background-color: lightblue;
     min-height: 100%; 
 }
@@ -43,13 +43,19 @@ nav {
 nav li {
     display: flex;
     gap:  2em;
+    flex-wrap: wrap;
 }
 
 main {
     display: flex;
+    flex-direction: column;
     gap: 1em;
 }
 
+.cls-articles {
+    display: flex;
+    justify-content: space-around;
+}
 article {
     background-color: floralwhite;
     border: 2px solid lightblue;
