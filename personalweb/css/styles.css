@@ -55,6 +55,8 @@ main {
 .cls-articles {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 article {
     background-color: floralwhite;
@@ -67,4 +69,8 @@ article {
 article h3 {
     color: darkblue;
     margin-left: 1em;
+}
+
+#personal-web-article iframe {
+    min-height: 25em;
 }
