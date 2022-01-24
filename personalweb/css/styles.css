@@ -98,3 +98,30 @@ td.cls-table-footer {
 td.cls-table-separator {
     background-color: cornflowerblue;
 }
+
+/* Forms */
+
+select[required], input[required]{
+    background-image: url("../img/asterisk.svg");
+    background-size: 1em 1em;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+select[required], input[type=date][required] {
+    background-position: 80% 0;
+}
+
+input[type=number] {
+    width: 3em;
+}
+
+.cls-formline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+    margin-top: 2em;
+    max-width: 730px;
+}
+
