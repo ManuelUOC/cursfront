@@ -24,126 +24,150 @@
         </ul>
     </nav>
     <main>
-        <form action="" method="get">
+        <div>
+            <section aria-label="Artículos varios">
+                <article>
+                    <h2>Artícul 1</h2>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, quod! Aut corrupti
+                        consectetur tempora suscipit quos quibusdam, repellat necessitatibus repellendus saepe totam,
+                        facilis, asperiores impedit animi minus sit deserunt cum.</p>
+                </article>
+                <article>
+                    <h2>Artícul 2</h2>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, quod! Aut corrupti
+                        consectetur tempora suscipit quos quibusdam, repellat necessitatibus repellendus saepe totam,
+                        facilis, asperiores impedit animi minus sit deserunt cum.</p>
+                </article>
+            </section>
+            <section aria-label="Formulario de datos personales">
+                <form action="" method="get">
 
-            <h3>Dades bàsiques</h3>
+                    <h3>Dades bàsiques</h3>
 
-            <label>Nom
-                <input type="text" name="fname" id="fname" placeholder="Nom" required>
-            </label>
-            <div class="cls-formline">
-                <label>Primer Cognom
-                    <input type="text" name="fname" id="fname" placeholder="Primer Cognom" required>
-                </label>
-                <label>Segon Cognom
-                    <input type="text" name="fname" id="fname" placeholder="Segon Cognom">
-                </label>
-            </div>
-            <div class="cls-formline">
-                <label>Tipus de Document
-                    <select name="doctype" id="doctype" placeholder="Tria el tipus de document" required>
-                        <option value="dni">DNI</option>
-                        <option value="nie" selected>NIE</option>
-                        <option value="pass">Pasaport</option>
-                    </select>
-                </label>
-                <label>Document d'identitat
-                    <input type="text" name="iddoc" id="iddoc" placeholder="12345678B"
-                        pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))">
-                </label>
-            </div>
-            <div class="cls-formline">
-                <fieldset>
-                    <legend>Ets:</legend>
-                    <div>
-                        <label>
-                            <input type="radio" id="male" name="gender" value="male" checked>
-                            Home
+                    <label>Nom
+                        <input type="text" name="fname" id="fname" placeholder="Nom" required>
+                    </label>
+                    <div class="cls-formline">
+                        <label>Primer Cognom
+                            <input type="text" name="fname" id="fname" placeholder="Primer Cognom" required>
                         </label>
-                        <label>
-                            <input type="radio" id="female" name="gender" value="female">
-                            Dona
+                        <label>Segon Cognom
+                            <input type="text" name="fname" id="fname" placeholder="Segon Cognom">
                         </label>
                     </div>
-                </fieldset>
-                <label>Data de neixament
-                    <input type="date" name="birthday" id="birthday" placeholder="dd/mm/yyyy" required>
-                </label>
-            </div>
-
-            <h3>Dades de contacte</h3>
-
-            <div class="cls-formline">
-                <label>Adreça de correu
-                    <input type="email" name="email" id="email" placeholder="mail@example.com" required>
-                </label>
-                <label>Telèfon
-                    <input type="tel" name="tel" id="tel" placeholder="123456789" required>
-                </label>
-            </div>
-            <div class="cls-formline">
-                <fieldset>
-                    <legend>¿Vius a Barcelona?</legend>
-                    <div>
-                        <label>
-                            <input type="radio" id="bcnyes" name="bcn" value="yes" checked>
-                            Si
+                    <div class="cls-formline">
+                        <label>Tipus de Document
+                            <select name="doctype" id="doctype" placeholder="Tria el tipus de document" required>
+                                <option value="dni">DNI</option>
+                                <option value="nie" selected>NIE</option>
+                                <option value="pass">Pasaport</option>
+                            </select>
                         </label>
-                        <label>
-                            <input type="radio" id="bcnnot" name="bcn" value="not">
-                            No
+                        <label>Document d'identitat
+                            <input type="text" name="iddoc" id="iddoc" placeholder="12345678B"
+                                pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))">
                         </label>
                     </div>
-                </fieldset>
-            </div>
-            <div class="cls-formline">
-                <label>Tipus de via
-                    <select name="streettype" id="streettype" placeholder="Tria el tipus de via" required>
-                        <option value="carrer">Carrer</option>
-                        <option value="plaça" selected>Plaça</option>
-                        <option value="carretera">Carretera</option>
-                    </select><br>
-                    <sub>El tipus de via és vàlid</sub>
-                </label>
-                <label>Adreça
-                    <input type="text" name="address" id="address" placeholder="Via Augusta" required>
-                </label>
-                <label>Número
-                    <input type="number" name="number" id="number" placeholder="1" step="1" value="1" required>
-                </label>
-            </div>
-            <div class="cls-formline">
-                <label>Pis
-                    <input type="text" name="floor" id="floor" placeholder="Bxs, Àt., 3r ...">
-                </label>
-                <label>Porta
-                    <input type="text" name="door" id="door" placeholder="1a, 2a ..."><br>
-                    <sub>La porta és vàlida</sub>
-                </label>
-                <label>Escala
-                    <input type="text" name="" id="stair" placeholder="A, B ...">
-                </label>
-            </div>
-            <div class="cls-formline">
-                <label>Codi postal
-                    <input type="text" name="zip" id="zip" placeholder="08902" required>
-                </label>
-                <label>Població
-                    <input list="town" name="town" />
-                    <datalist id="town">
-                        <option value="Barcelona">
-                        <option value="Tarragona">
-                        <option value="Lleida">
-                        <option value="Girona">
-                    </datalist><br>
-                    <sub>La població és vàlida</sub>
-                </label>
-            </div>
-            <div class="cls-formline">
-                <input type="submit" value="ENVIAR">
-            </div>
-        </form>
+                    <div class="cls-formline">
+                        <fieldset>
+                            <legend>Ets:</legend>
+                            <div>
+                                <label>
+                                    <input type="radio" id="male" name="gender" value="male" checked>
+                                    Home
+                                </label>
+                                <label>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    Dona
+                                </label>
+                            </div>
+                        </fieldset>
+                        <label>Data de neixament
+                            <input type="date" name="birthday" id="birthday" placeholder="dd/mm/yyyy" required>
+                        </label>
+                    </div>
+
+                    <h3>Dades de contacte</h3>
+
+                    <div class="cls-formline">
+                        <label>Adreça de correu
+                            <input type="email" name="email" id="email" placeholder="mail@example.com" required>
+                        </label>
+                        <label>Telèfon
+                            <input type="tel" name="tel" id="tel" placeholder="123456789" required>
+                        </label>
+                    </div>
+                    <div class="cls-formline">
+                        <fieldset>
+                            <legend>¿Vius a Barcelona?</legend>
+                            <div>
+                                <label>
+                                    <input type="radio" id="bcnyes" name="bcn" value="yes" checked>
+                                    Si
+                                </label>
+                                <label>
+                                    <input type="radio" id="bcnnot" name="bcn" value="not">
+                                    No
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="cls-formline">
+                        <label>Tipus de via
+                            <select name="streettype" id="streettype" placeholder="Tria el tipus de via" required>
+                                <option value="carrer">Carrer</option>
+                                <option value="plaça" selected>Plaça</option>
+                                <option value="carretera">Carretera</option>
+                            </select><br>
+                            <sub>El tipus de via és vàlid</sub>
+                        </label>
+                        <label>Adreça
+                            <input type="text" name="address" id="address" placeholder="Via Augusta" required>
+                        </label>
+                        <label>Número
+                            <input type="number" name="number" id="number" placeholder="1" step="1" value="1" required>
+                        </label>
+                    </div>
+                    <div class="cls-formline">
+                        <label>Pis
+                            <input type="text" name="floor" id="floor" placeholder="Bxs, Àt., 3r ...">
+                        </label>
+                        <label>Porta
+                            <input type="text" name="door" id="door" placeholder="1a, 2a ..."><br>
+                            <sub>La porta és vàlida</sub>
+                        </label>
+                        <label>Escala
+                            <input type="text" name="" id="stair" placeholder="A, B ...">
+                        </label>
+                    </div>
+                    <div class="cls-formline">
+                        <label>Codi postal
+                            <input type="text" name="zip" id="zip" placeholder="08902" required>
+                        </label>
+                        <label>Població
+                            <input list="town" name="town" />
+                            <datalist id="town">
+                                <option value="Barcelona">
+                                <option value="Tarragona">
+                                <option value="Lleida">
+                                <option value="Girona">
+                            </datalist><br>
+                            <sub>La població és vàlida</sub>
+                        </label>
+                    </div>
+                    <div class="cls-formline cls-center">
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
+            </section>
+        </div>
+        <aside>
+            <h3>Contingut transversal</h3>
+        </aside>
     </main>
+    <footer>
+        <sub>Peu de la pàgina</sub>
+    </footer>
 </body>
 
 </html>

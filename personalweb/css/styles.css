@@ -15,6 +15,8 @@ html, body {
 
 body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -34,6 +36,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 3em;
+    border-bottom: 4px solid black;
 }
 
 nav {
@@ -48,16 +51,20 @@ nav li {
 
 main {
     display: flex;
-    flex-direction: column;
     gap: 1em;
+    flex: 5;
 }
 
-.cls-articles {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 1em;
+main > div {
+    border-top: 4px solid black;
+    padding: 1em 2em;
 }
+
+section {
+    flex: 4;
+    text-align: center;
+}
+
 article {
     background-color: floralwhite;
     border: 2px solid lightblue;
@@ -66,14 +73,40 @@ article {
     box-shadow: 10px 10px aliceblue;
 }
 
+.cls-articles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
 article h3 {
     color: darkblue;
     margin-left: 1em;
 }
 
+form {
+    max-width: 730px;
+    display: inline-block;
+    text-align: start;
+}
+
+aside {
+    flex: 1;
+    background-color: bisque;
+    padding: 1em 2em;
+}
+
+footer {
+    font-weight: bold;
+    border-top: 4px solid blue;
+}
+
 #personal-web-article iframe {
     min-height: 25em;
 }
+
+/* Table */
 
 table {
     border: 8px solid;
@@ -101,6 +134,17 @@ td.cls-table-separator {
 
 /* Forms */
 
+form > h3 {
+    text-decoration: underline;
+    font-style: italic;
+    text-decoration-thickness: 4px;
+    margin: 3em auto;
+}
+
+form label > input, form label > select {
+    margin-left: 1em;
+}
+
 select[required], input[required]{
     background-image: url("../img/asterisk.svg");
     background-size: 1em 1em;
@@ -116,12 +160,28 @@ input[type=number] {
     width: 3em;
 }
 
+input[type=submit] {
+    background-color: cadetblue;
+    color: white;
+    border-radius: 10px;
+    height: 3em;
+    width: 10em;
+}
+
 .cls-formline {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2em;
     margin-top: 2em;
-    max-width: 730px;
 }
 
+.cls-formline.cls-center {
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+}
