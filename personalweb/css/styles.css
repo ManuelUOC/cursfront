@@ -180,6 +180,148 @@ input[type=submit] {
     justify-content: center;
 }
 
+/* CSS */
+
+main#css {
+    display: flex;
+    flex-direction: column;
+}
+
+main#css section {
+    text-align: initial;
+}
+
+section#circles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #EA80FA;
+    padding: 2vw;
+}
+
+section#circles > div {
+    width: 18vw;
+    height: 18vw;
+    border: 5px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+section#circles > div.red {
+    background-color: red;
+}
+
+section#circles > div.yellow {
+    background-color: #FFFE8A;
+}
+
+section#circles > div.shadow {
+    box-shadow: 0px 10px 15px -4px black;
+}
+
+section#circles > div.orange-shadow {
+    border-color: #F7A223;
+    box-shadow: 0px 10px 15px -4px #F7A223;
+}
+
+section#bounds > div {
+    margin: 2em;
+    border: 2em solid red;
+    padding: 2em;
+}
+section#squares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section#squares > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 30vw;
+    height: 30vw;
+    font-weight: bold;
+    font-size: 2em;
+    background-color: white;
+}
+
+section#squares > div.purple {
+    background-color: rgba(142, 68, 173, 1);
+}
+
+section#squares > div.yellow {
+    background-color: #F1C40F;
+}
+
+section#text {
+    margin: 1em;
+}
+
+section#text span.green {
+    color: green;
+    text-decoration: underline;
+}
+
+section#text span.red {
+    color: red;
+}
+
+section#text span.underline {
+    text-decoration: underline overline;;
+}
+
+section#text span.font {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+section#text span.bold-blue {
+    font-weight: bold;
+    color: blue;
+}
+
+section#text span.bold-red {
+    font-weight: bold;
+    color: red;
+    text-decoration: underline;
+}
+
+section#background > div {
+    border: 1px solid black;
+    text-align: center;
+    font-size: .75em;
+    font-weight: bold;
+}
+
+section#background > div > p {
+    width: 15em;
+    margin: 1em auto;
+}
+
+section#background .one {
+    background: url(../img/mud.png) ;
+}
+
+section#background .two {
+    background: url(../img/flame.png) no-repeat  bottom left , url(../img/flame.png) no-repeat bottom right;
+    background-size: auto 35%;
+    background-color: white;
+}
+
+section#background .three {
+    background: url(../img/asterisk.svg) no-repeat center, url(../img/flame.png) repeat;
+    background-size: auto 70%, auto 20%;
+    background-color: rgb(221, 208, 28);
+}
+section#background .four {
+    background: url(../img/flame.png) repeat-x bottom, url(../img/asterisk.svg) repeat;
+    background-size: auto 20%;
+    background-color: rgb(20, 177, 230);
+}
+
 @media screen and (max-width: 900px) {
     main {
         flex-direction: column;
